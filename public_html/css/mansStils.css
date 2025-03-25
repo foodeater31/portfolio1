@@ -1,0 +1,30 @@
+
+body { 
+    font-family: "Arial", sans-serif;
+    background-color:darkgray;
+}
+p {
+    color:black;
+    text-align: left;
+}
+.name {
+    text-align: center;
+}
+.klase {
+    text-align: center;
+    opacity: 1.0;
+}
+.fin {
+    font-size: 30;
+    color: black;
+    opacity: 1.0;
+    font-style: italic;
+    margin-right: 20;
+}
+.link {
+    font-size: 30;
+    color: blue;
+    opacity: 1;
+    font-style: italic;
+    margin-top: 25;
+}

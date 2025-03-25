@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Otrais</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/mansStils.css">
+        <link rel="stylesheet" href="mansStils.css" type="text/css"/>
+    </head>
+    <body>
+       <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('home')">Sākums</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('video')">Video</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('word')">Word</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('excel')"> Excel</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('gimp')">Gimp</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('inkscape')">Inkscape</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="window.location.href = 'index.html';setPageName('model')">3D modelis</a>
+                <a href="#otrais" class="w3-bar-item w3-button w3-padding-large">Otrais</a>
+                <span class="w3-bar-item w3-padding-large w3-right">Ralfs Kalniņš</span>
+            </div>
+        </div>
+  <div id="home" class="w3-container w3-content w3-padding-64 content-section">
+            <h2 class="home">Autortiesības/Plakāts</h2>
+        </div>
+        <div id="individual" class="individual w3-container w3-content w3-padding-64">
+            <p class="otrais">Autortiesības aizsargā cilvēku radītos darbus, piemēram, grāmatas, dziesmas, filmas un bildes. Tas nozīmē, ka tikai darba autors drīkst to kopēt, pārdot vai izmantot publiski, ja vien nav devis atļauju citiem. Tas palīdz autoram saņemt atlīdzību par savu darbu un neļauj citiem to izmantot bez atļaujas.</p>
+            <img width="960" height="540" src="images/plakāts.svg"><br><br><br><br><br><br><br>
+        </div>
+          <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+    <script>
+     function showSection(sectionId) {
+  // Hide all sections
+       document.querySelectorAll('.main-content, .content-section').forEach(section => {
+       section.style.display = 'none';
+       });
+  // Show the selected section
+       document.getElementById(sectionId).style.display = 'block';
+     }
+     function showAnotherPage() {
+            window.location.href = "index.html";
+        }
+function showSection1(sectionId) {
+  // Hide all sections
+       document.querySelectorAll('.main-content, .content-section').forEach(section => {
+       section.style.display = 'none';
+       });
+  // Show the selected section
+       document.getElementById(sectionId).style.display = 'block';
+     }
+     function showSection(sectionId) {
+  // Hide all sections
+  document.querySelectorAll('.main-content, .content-section').forEach(section => {
+    section.style.display = 'none';
+  });
+  // Show the selected section
+  document.getElementById(sectionId).style.display = 'block';
+}
+     function setPageName (arg) {
+        sessionStorage.setItem("sectionid", arg) ;
+     }
+     </script>
+</html>
